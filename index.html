@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./owfont-regular.css">
+  <link rel="stylesheet" href="style.css" />
+  <title>momentum</title>
+</head>
+<body>
+  <main>
+    <div class="wrapper"> 
+      <button onclick="switchBack()" style="margin-bottom: 20px;">Switch Background</button>
+      <div class="weatherBlock">
+        <div style="font-size: 0.8rem; opacity: 0.5;">You can choose the city</div>
+        <div class="city" contenteditable="true">Tokyo</div>
+        <div style="display: flex; column-gap: 3px; justify-content: center; align-items: center;">
+            <i class="weather-icon owf owf-803"></i>
+            <div class="temperature">13.96°C</div>
+        </div>
+        <div class="weather-description weather-humidity">Humidity: 54%</div>
+        <div class="weather-description weather-velocity">Wind: 22km/h</div>
+    </div>
+      <time class="time"></time>
+      <h1>
+        <span class="greeting"></span>
+        <span class="name" contenteditable="true"></span>
+      </h1>
+      <h2>What Is Your Focus For Today?</h2>
+      <h2 class="focus" contenteditable="true"></h2>
+      <blockquote>
+        <p class="quote-head"></p>
+        <footer class="quote-footer">&mdash;</footer>
+      </blockquote>
+      <button onclick="addQuote()">Inspire me</button>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
