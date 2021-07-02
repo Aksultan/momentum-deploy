@@ -134,7 +134,7 @@ function switchBack(){
 }
 
 async function getWeather() {
-  const url = `https://api.openweathermap.org/data/2.5/weather?q=${city.textContent}&lang=en&appid=78f660e7a8ede74fcb485ac58f9e870e&units=metric`;
+  const url = `https://api.openweathermap.org/data/2.5/weather?q=${city.textContent}&lang=en&appid=yourIdHere&units=metric`;
   const res = await fetch(url);
   const data = await res.json();
 
